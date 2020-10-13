@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>EventBuzz</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>signup</servlet-name>
+    <servlet-class>com.eventBuzz.Signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/Signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>organizer</servlet-name>
+    <servlet-class>com.eventBuzz.CSignup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>organizer</servlet-name>
+    <url-pattern>/CSignup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.eventBuzz.Route</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/route</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentLogin</servlet-name>
+    <servlet-class>com.eventBuzz.LoginAsStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentLogin</servlet-name>
+    <url-pattern>/LoginAsStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>organizerLogin</servlet-name>
+    <servlet-class>com.eventBuzz.LoginFC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>organizerLogin</servlet-name>
+    <url-pattern>/loginAsCoordinator</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>studentUpdate</servlet-name>
+    <servlet-class>com.eventBuzz.StudentUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>studentUpdate</servlet-name>
+    <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>FOUpdate</servlet-name>
+    <servlet-class>com.eventBuzz.CUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FOUpdate</servlet-name>
+    <url-pattern>/CUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logadmin</servlet-name>
+    <servlet-class>com.eventBuzz.AdminPanel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logadmin</servlet-name>
+    <url-pattern>/Adminn</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>com.eventBuzz.Add_Event</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/Add_Event</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateEvent</servlet-name>
+    <servlet-class>com.eventBuzz.AddUpdatedValues</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateEvent</servlet-name>
+    <url-pattern>/AddUpdatedValues</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>regCancel</servlet-name>
+    <servlet-class>com.eventBuzz.RegCancellation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>regCancel</servlet-name>
+    <url-pattern>/cancel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentDelete</servlet-name>
+    <servlet-class>com.eventBuzz.S_Deactivate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentDelete</servlet-name>
+    <url-pattern>/Deactive</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

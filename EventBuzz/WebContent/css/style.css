@@ -1,0 +1,119 @@
+@charset "ISO-8859-1";
+
+/* ====================================
+ Default colors: 
+ 	Niagra	:			#26AD91
+	Flamingo :			#DD6153
+	Black :			 	#040403
+	Very Light Grey :	#CECECE
+	Royal Blue  :		#367EE6
+========================================
+*/
+
+/* ====================================
+	Anchor Header :-
+		default : white on black
+		hover : black on green
+======================================= */
+.ah {
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	border: 8px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+.ah:hover, .ah:focus {
+	background-color: #26AD91;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+	transition: all 2s ease;
+	color: black;
+}
+
+/* =========================================
+		Red Header Line
+========================================= */
+.header {
+	background-color: #E00707;
+	padding: 5px;
+	position: relative;
+}
+
+.h {
+	text-align: right;
+}
+
+.dropbtn {
+	background-color: black;
+	color: white;
+	padding: 4px;
+	border: 10px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 1em;
+	vertical-align: 1px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 150px;
+	text-align: left;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 8px 10px;
+	text-decoration: none;
+	display: block;
+}
+
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-image: url("/EventBuzz/img/antony.jpg");
+}
+
+.cntr {
+	background: #E00707;
+	top
+	=0;
+}
+
+#image {
+	vertical-align: middle;
+}
+
+.dropdown-content .ah:hover {
+	background-color: ivory;
+	color: black;
+	transition: all 2s ease;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #14C490;
+	color: black;
+	transition: all 2s ease;
+	font-weight: bolder;
+}

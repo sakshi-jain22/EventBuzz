@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+.heading {
+	font-family: 'Domine', sans-serif;
+	text-transform: capitalize;
+	color: #41464B;
+	font-weight: 400;
+}
+
+td .fa {
+	color: #1abc9c;
+	cursor: pointer;
+}
+
+tr:hover td .fa {
+	color: #34495e;
+}
+
+.form-table {
+	animation-duration: 1.5s;
+}
+
+#tid th {
+	font-style: italic;
+}
+
+#tid td {
+	padding: 0;
+}
+td.img-wrapper {
+	display: inline-block;
+	margin-top : 0;
+}
+
+.img-wrapper img{
+	height: 150px;
+	width: auto;
+}
+
+.img-wrapper img:hover {
+	cursor: zoom-in;
+}
+
+.bg-parallax {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
